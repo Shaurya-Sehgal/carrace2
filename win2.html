@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image:url("https://www.motorsportweek.com/wp-content/uploads/2022/02/35C74BF4-318E-4323-BBD3-177DFB5B9740.jpeg");
+            background-size: cover;
+        
+        }
+        h1{
+            color: white;
+            animation-name: win;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            margin-top: 200px;
+            font-size: 150px;
+            opacity: 1;
+        }
+        @keyframes win {
+            from{
+                margin-top: 700px;
+                font-size: 2px;
+                opacity: 0.2;
+            }
+            to{
+                margin-top: 200px;
+                font-size: 150px;
+                opacity: 1;
+            }
+        }
+        button{
+            font-size: 60px;
+            border-radius: 10px;
+            background-color: darkorange;
+            color: white;
+            animation-name: restart;
+            animation-duration: 4s;
+            animation-iteration-count: 1;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: orange;
+        }
+        @keyframes restart {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Player 2 Won!</h1>
+        <a href="index.html">
+        <button>Restart</button>
+    </a>
+</center>
+</body>
+</html>
