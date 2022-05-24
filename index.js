@@ -7,6 +7,9 @@ function moveCar1(){
         speed = Math.floor(speed)%3 + 1
         document.getElementById(position).src = "https://www.roadsbridges.com/sites/rb/files/styles/content_type_page/public/Traffic_Safety_64.jpg?itok=a9CICO90"
         position = position + speed
+    else{
+        prompt("It's The Other Players Turn!")
+    }
         if(position > 9){
             location.href = "win.html"
         }

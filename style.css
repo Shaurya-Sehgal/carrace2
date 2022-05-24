@@ -1,21 +1,20 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 img{
     width: 170px;
-    border-radius: 10px;
 }
 #sky{
-    width: 100%;
+    width: 99.7%;
     border: solid;
-    height: 20vh;
+    height: 19.9vh;
     background-image: url("https://cdn.pixabay.com/photo/2017/06/04/16/32/clouds-2371482_960_720.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 .land{
-    width: 100%;
+    width: 99.7%;
     height: 20vh;
     border: solid;
     background-image: url("https://www.hummert.com/content/files/images/GrassSeed-banner.jpg");
@@ -23,20 +22,54 @@ img{
 .road1{
     border: dashed;
     background-color: black;
+    width: 99.7%;
 }
 .road2{
     border: dashed;
     background-color: black;
+    width: 99.7%;
 }
 h2{
     color: white;
 }
 button{
     background-color: darkorange;
-    border-radius: 5px;
-    padding: 3px;
+    border-radius: 7px;
+    padding: 2px;
 }
 button:hover{
     cursor: pointer;
     background-color: orange;
+}
+
+/* ------------- Media ---------------- */
+@media screen and (max-width: 1746px) {
+    img {
+        width: 145px;
+    }
+}
+@media screen and (max-width: 1536px) {
+    img {
+        width: 133px;
+    }
+    .land {
+        height: 19vh;
+    }
+    #sky {
+        height: 19.3vh;
+    }
+}
+@media screen and (max-width: 1280px) {
+    img {
+        width: 105px;
+    }
+    button {
+        font-size: 10px;
+    }
+    .land {
+        height: 18.7vh;
+    }
+    #sky {
+        height: 18.9vh;
+    }
 }
