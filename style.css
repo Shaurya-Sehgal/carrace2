@@ -59,6 +59,17 @@ button:hover{
         height: 19.3vh;
     }
 }
+@media screen and (max-width: 1350px) {
+    img{
+        width: 125px;
+    }
+    #sky {
+        height: 20vh;
+    }
+    .land {
+        height: 20vh;
+    }
+}
 @media screen and (max-width: 1280px) {
     img {
         width: 105px;
