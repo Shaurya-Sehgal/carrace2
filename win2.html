@@ -1,66 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <title>Lose</title>
     <style>
-        body{
-            background-image:url("https://www.motorsportweek.com/wp-content/uploads/2022/02/35C74BF4-318E-4323-BBD3-177DFB5B9740.jpeg");
-            background-size: cover;
-        
+      * {
+        font-family: Kdam Thmor Pro;
+      }
+      body {
+        background-image: url("https://www.motorsportweek.com/wp-content/uploads/2022/02/35C74BF4-318E-4323-BBD3-177DFB5B9740.jpeg");
+        background-size: cover;
+      }
+      h1 {
+        color: white;
+        animation-name: lose;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        margin-top: 200px;
+        font-size: 150px;
+        opacity: 1;
+      }
+      @keyframes lose {
+        from {
+          margin-top: 700px;
+          font-size: 2px;
+          opacity: 0.2;
         }
-        h1{
-            color: white;
-            animation-name: win;
-            animation-duration: 3s;
-            animation-iteration-count: 1;
-            margin-top: 200px;
-            font-size: 150px;
-            opacity: 1;
+        to {
+          margin-top: 200px;
+          font-size: 150px;
+          opacity: 1;
         }
-        @keyframes win {
-            from{
-                margin-top: 700px;
-                font-size: 2px;
-                opacity: 0.2;
-            }
-            to{
-                margin-top: 200px;
-                font-size: 150px;
-                opacity: 1;
-            }
+      }
+      button {
+        font-family: Kdam Thmor Pro;
+        font-size: 17px;
+        cursor: pointer;
+        font-weight: 700;
+        background-color: rgb(0, 255, 170);
+        transition: all 0.5s;
+        border-radius: 20px;
+        padding: 5px 8px;
+        animation-name: restart;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+      }
+      @keyframes restart {
+        from {
+          opacity: 0;
         }
-        button{
-            font-size: 60px;
-            border-radius: 10px;
-            background-color: darkorange;
-            color: white;
-            animation-name: restart;
-            animation-duration: 4s;
-            animation-iteration-count: 1;
+        to {
+          opacity: 1;
         }
-        button:hover{
-            cursor: pointer;
-            background-color: orange;
-        }
-        @keyframes restart {
-            from{
-                opacity: 0;
-            }
-            to{
-                opacity: 1;
-            }
-        }
+      }
+      button:hover {
+        background-color: rgb(0, 255, 47);
+        font-size: 19px;
+      }
+      .back {
+        margin-top: 22px;
+        background-color: red;
+      }
+      .back:hover {
+        background-color: black;
+        color: red;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <center>
-        <h1>Player 2 Won!</h1>
-        <a href="index.html">
-        <button>Restart</button>
-    </a>
-</center>
-</body>
+      <h1>Player 2 Won</h1>
+      <button onclick="location.href = 'index.html'">Restart</button>
+      <br />
+      <a href="https://shaurya-sehgal.github.io/glitchedgaming/">
+        <button class="back">Go Back To Glitched Games</button>
+      </a>
+    </center>
+  </body>
 </html>
